@@ -14,3 +14,7 @@ def test_hello_performance():
         hello('EPSI')
     duration = time.time() - start
     assert duration < 0.1
+
+
+def test_hello_full_name():
+    assert hello(firstname="John", lastname="Doe") == "Hello, John Doe!"
